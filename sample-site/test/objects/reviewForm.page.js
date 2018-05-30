@@ -9,7 +9,7 @@ class ReviewForm {
     return $('#review-content')
   }
   get formError() {
-    return $('p=There are some errors in your review.')
+    return $('p= There are some errors in your review.')
   }
   get emailError() {
     return $('p=Please enter a valid email address.')

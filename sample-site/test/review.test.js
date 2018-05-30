@@ -30,7 +30,7 @@ describe('The product review form', () => {
 
     reviewForm.submit('email@email.com', 'This is a review')
 
-    const isMainErrorShowing = reviewForm.formError.isVisible()
+    const isMainErrorShowing = reviewForm.formError.isVisibleWithinViewport()
     const isContentErrorShowing = reviewForm.reviewError.isVisible()
     expect(isMainErrorShowing).to.be.false
     expect(isContentErrorShowing).to.be.false
