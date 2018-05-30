@@ -1,0 +1,62 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true,
+    "webdriverio/wdio": true
+  },
+  "plugins": [
+    "webdriverio"
+  ],
+  "rules": {
+    "arrow-parens": "off",
+    "class-methods-use-this": "off",
+    "comma-dangle": "off",
+    "default-case": "off",
+    "indent": [
+      "warn",
+      2,
+      {
+        "SwitchCase": 1,
+        "ignoredNodes": [
+          "JSXAttribute",
+          "JSXSpreadAttribute"
+        ]
+      }
+    ],
+    "import/no-unresolved": [
+      "error",
+      {
+        "commonjs": true
+      }
+    ],
+    "import/named": "error",
+    "import/default": "error",
+    "import/namespace": "error",
+    "import/export": "error",
+    "linebreak-style": "off",
+    "max-len": "off",
+    "new-cap": [
+      "error",
+      {
+        "capIsNew": false,
+        "newIsCap": true
+      }
+    ],
+    "no-console": "off",
+    "no-floating-decimal": "off",
+    "no-shadow": "error",
+    "no-restricted-syntax": "off",
+    "no-unused-expressions": 0,
+    "semi": [
+      "error",
+      "never"
+    ]
+  },
+  "globals":{
+   "describe" : true,
+   "it":true,
+   "before":true,
+   "beforeEach":true,
+   "expect":true
+  }
+}
