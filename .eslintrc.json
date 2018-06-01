@@ -57,6 +57,7 @@
    "it":true,
    "before":true,
    "beforeEach":true,
-   "expect":true
+   "expect":true,
+   "require":true
   }
 }
